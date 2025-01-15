@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { GitBranch, ArrowRight, Folder, File, FolderOpen } from "lucide-react";
+import { ArrowRight, Folder, File, FolderOpen, Code } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -10,7 +10,7 @@ export default function LandingPage() {
           {/* Hero Section */}
           <div className="space-y-5 max-w-3xl mx-auto text-center">
             <div className="p-4 rounded-full bg-black/50 border border-zinc-800/50 backdrop-blur-sm w-16 h-16 flex items-center justify-center mx-auto">
-              <GitBranch className="w-8 h-8 text-purple-500" />
+              <Code className="w-8 h-8 text-purple-500" />
             </div>
 
             <div className="space-y-5 max-w-2xl flex flex-col justify-center items-center">
