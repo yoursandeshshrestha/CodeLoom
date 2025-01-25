@@ -3,7 +3,7 @@ import { Toaster } from "sonner";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Repo Explorer",
+  title: "CodeLoom | Where Your Repos Unfold",
   description: "Simplify debugging with AI-powered repository exploration.",
   icons: {
     icon: "/favicon.png",
