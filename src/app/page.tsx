@@ -4,7 +4,7 @@ import { ArrowRight, Folder, File, FolderOpen, Code } from "lucide-react";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen overflow-hidden bg-background selection:bg-primary/20 selection:text-primary">
+    <div className="min-h-screen max-h-screen overflow-hidden bg-background selection:bg-primary/20 selection:text-primary">
       <div className="max-w-7xl mx-auto px-6 flex min-h-[calc(100vh-73px)]">
         <div className="flex flex-col justify-center items-center w-full gap-16 py-16">
           {/* Hero Section */}
@@ -53,41 +53,41 @@ export default function LandingPage() {
             <div className="p-6 font-mono text-sm bg-[#0A0A0A]">
               <div className="space-y-3">
                 {/* Root folder */}
-                <div className="flex items-center space-x-2 text-zinc-300 hover:text-primary transition-colors">
+                <div className="flex items-center space-x-2 text-zinc-300  transition-colors">
                   <FolderOpen className="w-4 h-4 text-primary" />
                   <span className="font-medium">repository-explorer</span>
                 </div>
 
                 {/* src folder */}
                 <div className="ml-4 space-y-3">
-                  <div className="flex items-center space-x-2 text-zinc-300 hover:text-primary transition-colors">
-                    <FolderOpen className="w-4 h-4 text-primary" />
+                  <div className="flex items-center space-x-2 text-zinc-300  transition-colors">
+                    <FolderOpen className="w-4 h-4 text-gray-300" />
                     <span className="font-medium">src</span>
                   </div>
 
                   {/* src contents */}
                   <div className="ml-4 space-y-2">
-                    <div className="flex items-center space-x-2 text-zinc-500 hover:text-zinc-300 transition-colors">
-                      <File className="w-4 h-4 text-accent" />
+                    <div className="flex items-center space-x-2 text-zinc-500  transition-colors">
+                      <File className="w-4 h-4 text-gray-300" />
                       <span>App.tsx</span>
                     </div>
-                    <div className="flex items-center space-x-2 text-zinc-500 hover:text-zinc-300 transition-colors">
-                      <File className="w-4 h-4 text-success" />
+                    <div className="flex items-center space-x-2 text-zinc-500  transition-colors">
+                      <File className="w-4 h-4 text-gray-300" />
                       <span>styles.css</span>
                     </div>
 
                     {/* components folder */}
-                    <div className="flex items-center space-x-2 text-zinc-300 hover:text-primary transition-colors">
-                      <Folder className="w-4 h-4 text-primary" />
+                    <div className="flex items-center space-x-2 text-zinc-300  transition-colors">
+                      <Folder className="w-4 h-4 text-gray-300" />
                       <span className="font-medium">components</span>
                     </div>
                     <div className="ml-4 space-y-2">
-                      <div className="flex items-center space-x-2 text-zinc-500 hover:text-zinc-300 transition-colors">
-                        <File className="w-4 h-4 text-accent" />
+                      <div className="flex items-center space-x-2 text-zinc-500  transition-colors">
+                        <File className="w-4 h-4 text-gray-300" />
                         <span>Explorer.tsx</span>
                       </div>
-                      <div className="flex items-center space-x-2 text-zinc-500 hover:text-zinc-300 transition-colors">
-                        <File className="w-4 h-4 text-accent" />
+                      <div className="flex items-center space-x-2 text-zinc-500  transition-colors">
+                        <File className="w-4 h-4 text-gray-300" />
                         <span>FileTree.tsx</span>
                       </div>
                     </div>
@@ -95,19 +95,19 @@ export default function LandingPage() {
                 </div>
 
                 {/* public folder */}
-                <div className="ml-4 flex items-center space-x-2 text-zinc-300 hover:text-primary transition-colors">
-                  <Folder className="w-4 h-4 text-primary" />
+                <div className="ml-4 flex items-center space-x-2 text-zinc-300  transition-colors">
+                  <Folder className="w-4 h-4 text-gray-300" />
                   <span className="font-medium">public</span>
                 </div>
 
                 {/* Config files */}
                 <div className="ml-4 space-y-2">
-                  <div className="flex items-center space-x-2 text-zinc-500 hover:text-zinc-300 transition-colors">
-                    <File className="w-4 h-4 text-warning" />
+                  <div className="flex items-center space-x-2 text-zinc-500  transition-colors">
+                    <File className="w-4 h-4 text-gray-300" />
                     <span>package.json</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-zinc-500 hover:text-zinc-300 transition-colors">
-                    <File className="w-4 h-4 text-warning" />
+                  <div className="flex items-center space-x-2 text-zinc-500  transition-colors">
+                    <File className="w-4 h-4 text-gray-300" />
                     <span>tsconfig.json</span>
                   </div>
                 </div>
