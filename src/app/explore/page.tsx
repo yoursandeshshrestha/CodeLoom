@@ -105,7 +105,12 @@ const Explorer: React.FC = () => {
       // Display a success toast message
       toast.success("Repository uploaded and processed successfully!");
     } catch (error) {
-      toast.error("Failed to process ZIP file");
+      toast.error(
+        error instanceof Error ? error.message : "Failed to fetch repository",
+        {
+          duration: 1000,
+        }
+      );
     } finally {
       setIsLoading(false);
     }

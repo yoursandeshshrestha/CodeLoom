@@ -1,10 +1,19 @@
 import { FileNode } from "../types/repository";
 
+// Define a type for the GitHub tree nodes
+interface GithubTreeNode {
+  path: string; // Path of the file/directory
+  type: "blob" | "tree"; // "blob" for files, "tree" for directories
+  [key: string]: unknown; // Allow for additional properties if necessary
+}
+
+// Utility to get file extensions
 export const getFileExtension = (filename: string): string => {
   const parts = filename.split(".");
   return parts.length > 1 ? parts.pop()!.toLowerCase() : "";
 };
 
+// Function to generate a tree-like text representation of a file structure
 export const generateTreeText = (
   node: FileNode,
   options: {
@@ -46,13 +55,18 @@ export const generateTreeText = (
   return result;
 };
 
-export const processGithubTree = (tree: any[], url: string): FileNode => {
+// Function to process a GitHub tree API response into a FileNode structure
+export const processGithubTree = (
+  tree: GithubTreeNode[],
+  url: string
+): FileNode => {
   const structure: FileNode = {
     name: url.split("/").pop() || "Repository",
     type: "directory",
     path: "/",
     children: [],
   };
+
   const sortNodes = (nodes: FileNode[]) => {
     return nodes.sort((a, b) => {
       if (a.type === "directory" && b.type === "file") return -1;
