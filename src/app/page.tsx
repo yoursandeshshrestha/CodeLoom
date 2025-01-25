@@ -15,10 +15,17 @@ export default function LandingPage() {
 
             <div className="space-y-5 max-w-2xl flex flex-col justify-center items-center">
               <h1 className="text-6xl text-center font-bold tracking-tight text-foreground flex items-center">
-                <span>Repository</span>
+                <span>Code</span>
                 <span className="mx-2 text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary">
-                  Explorer
+                  Loom
                 </span>
+              </h1>
+              <h1 className="text-6xl text-center font-bold tracking-tight text-foreground flex items-center">
+                <span>The </span>
+                <span className="mx-2 text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary">
+                  Repository
+                </span>
+                <span>Explorer</span>
               </h1>
 
               <p className="text-lg text-zinc-400 mx-auto font-light">
@@ -74,6 +81,10 @@ export default function LandingPage() {
                     <div className="flex items-center space-x-2 text-zinc-500  transition-colors">
                       <File className="w-4 h-4 text-gray-300" />
                       <span>styles.css</span>
+                    </div>
+                    <div className="flex items-center space-x-2 text-zinc-500  transition-colors">
+                      <File className="w-4 h-4 text-gray-300" />
+                      <span>.gitignore</span>
                     </div>
 
                     {/* components folder */}
