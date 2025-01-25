@@ -9,14 +9,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#090909", // Dark background
-        foreground: "#ffffff", // White text
-        primary: "#7c3aed", // Purple
-        secondary: "#a855f7", // Purple shade for gradients
-        accent: "#22d3ee", // Cyan
-        danger: "#ef4444", // Red
-        warning: "#facc15", // Yellow
-        success: "#4ade80", // Green
+        background: "#090909",
+        foreground: "#ffffff",
+        primary: "#7c3aed",
+        secondary: "#a855f7",
+        accent: "#22d3ee",
+        danger: "#ef4444",
+        warning: "#facc15",
+        success: "#4ade80",
+        gray: {
+          900: "#0B0B0F",
+          800: "#151519",
+          700: "#1F1F24",
+          600: "#2C2C33",
+          500: "#3A3A42",
+          400: "#9898A3",
+          300: "#AFAFB7",
+          200: "#C6C6CC",
+          100: "#DDDDE0",
+        },
       },
     },
   },
