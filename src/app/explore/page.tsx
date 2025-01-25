@@ -29,6 +29,9 @@ const Explorer: React.FC = () => {
 
       const structure = processGithubTree(data.tree, url);
       setRepository(structure);
+
+      // Display a success toast message
+      toast.success("Repository fetched successfully!");
     } catch (error) {
       toast.error(
         error instanceof Error ? error.message : "Failed to fetch repository",
@@ -98,6 +101,9 @@ const Explorer: React.FC = () => {
       }
 
       setRepository(structure);
+
+      // Display a success toast message
+      toast.success("Repository uploaded and processed successfully!");
     } catch (error) {
       toast.error("Failed to process ZIP file");
     } finally {
