@@ -1,10 +1,63 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Folder, File, FolderOpen, Code } from "lucide-react";
+import {
+  ArrowRight,
+  Folder,
+  File,
+  FolderOpen,
+  Code,
+  Github,
+  AlertTriangle,
+} from "lucide-react";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen max-h-screen overflow-hidden bg-background selection:bg-primary/20 selection:text-primary">
+      <div className="absolute top-4 left-4 bg-warning/10 border border-warning/30 rounded-lg p-3 flex items-center gap-2 text-warning">
+        <AlertTriangle className="w-5 h-5" />
+        <div>
+          <p className="text-xs font-medium">Help Improve CodeLoom</p>
+          <p className="text-xs text-zinc-400">
+            Known issues. Contribute on{" "}
+            <a
+              href="https://github.com/yoursandeshshrestha/codeloom/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-primary"
+            >
+              GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+      <div className="absolute top-4 right-4">
+        <a
+          href="https://github.com/yoursandeshshrestha/codeloom"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            h-10
+            px-4
+            rounded-md
+            bg-primary/10
+            border border-primary/20
+            text-white
+            inline-flex
+            items-center
+            justify-center
+            gap-2
+            hover:bg-primary/20
+            transition-colors
+            duration-200
+            text-sm
+            font-medium
+          "
+        >
+          <Github className="w-4 h-4" />
+          Star on GitHub
+        </a>
+      </div>
+
       <div className="max-w-7xl mx-auto px-6 flex min-h-[calc(100vh-73px)]">
         <div className="flex flex-col justify-center items-center w-full gap-16 py-16">
           {/* Hero Section */}
